@@ -21,7 +21,7 @@
   - you can set a value from 0 to 18
 
 ### Output example
-![Matches](https://github.com/rizzoantoninomaria/t_linkage/tree/master/readme_imgs/1.png)
-![Preference_matrix](https://github.com/rizzoantoninomaria/t_linkage/tree/master/readme_imgs/2.png)
-![Ground-truth](https://github.com/rizzoantoninomaria/t_linkage/tree/master/readme_imgs/3.png)
-![Estimation](https://github.com/rizzoantoninomaria/t_linkage/tree/master/readme_imgs/4.png)
+![Matches](./readme_imgs/1.png)
+![Preference_matrix](./readme_imgs/2.png )
+![Ground-truth](./readme_imgs/3.png)
+![Estimation](./readme_imgs/4.png)
