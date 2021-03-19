@@ -21,7 +21,18 @@
   - you can set a value from 0 to 18
 
 ### Output example
+- Matches
+
 ![Matches](./readme_imgs/1.png)
+
+- Preference Matrix
+
 ![Preference_matrix](./readme_imgs/2.png )
+
+- Ground truth
+
 ![Ground-truth](./readme_imgs/3.png)
+
+- Estimation 
+
 ![Estimation](./readme_imgs/4.png)
