@@ -1,6 +1,9 @@
 # T-Linkage
 
-> Python implementation of T-Linkage
+> Python implementation of [T-Linkage](https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Magri_T-Linkage_A_Continuous_2014_CVPR_paper.pdf)
+
+> Test dataset: [AdelaideRMF](https://osf.io/gb5yc/)
+
 
 #### Required libraries: 
 - opencv
@@ -8,8 +11,10 @@
 - scipy
 - matplotlin
 
+
 #### Instructions
 - Run a_main.py
+
 
 ### Inputs
 - mode:
@@ -19,6 +24,7 @@
 - k:
   - it is the value of the image-pair you want to test
   - you can set a value from 0 to 18
+
 
 ### Output example
 - Matches
