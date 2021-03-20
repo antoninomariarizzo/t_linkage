@@ -39,7 +39,7 @@ def get_preference_matrix_fm(kp_src, kp_dst, good_matches, tau):
         # endregion
 
         # region Compute the fundamental matrix F and the mask of inliers from a single iteration of RANSAC
-        F, inliers_mask = cv2.findFundamentalMat(src_pts_current, dst_pts_current, cv2.RANSAC,
+        F, inliers_mask = cv2.findFundamentalMat(src_pts_current, dst_pts_current, cv2.FM_7POINT,
                                                  ransacReprojThreshold=INLIER_THRESHOLD, confidence=0.999,
                                                  maxIters=1)
         # endregion

@@ -9,6 +9,7 @@ from utils_t_linkage import plotMatches, show_pref_matrix, compute_errors, plot_
 
 OUTLIER_THRESHOLD = 8
 
+
 def t_linkage(tau, label_k, mode):
 
     # region Get image path from label_k
@@ -56,6 +57,7 @@ def t_linkage(tau, label_k, mode):
     # region Clustering
     clusters, pref_m = clustering(pref_m)
     clusters_mask = get_cluster_mask(clusters, num_of_points, OUTLIER_THRESHOLD)
+    # endregion
 
     # region Plot clusters
     plot_clusters(img_i, img_j, src_pts, dst_pts, clusters_mask_gt, label_k + " - Ground-truth")
@@ -65,6 +67,7 @@ def t_linkage(tau, label_k, mode):
     # region Compute Misclassification Error
     err, num_of_pts = compute_errors(clusters_mask, clusters_mask_gt)
     me = err / num_of_pts  # compute misclassification error
+    # endregion
 
     print("ME % = " + str(round(float(me), 4)))
 
