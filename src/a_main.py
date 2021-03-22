@@ -2,7 +2,7 @@ from b_tlinkage import t_linkage
 
 if __name__ == '__main__':
     # region INPUT
-    mode = 1  # [1 for Motion Segmentation | 2 for Plane Segmentation]
+    mode = 2  # [1 for Motion Segmentation | 2 for Plane Segmentation]
     k = 12    # [k is the image-pair index; select a value from 0 to 18]
     # endregion
 
@@ -23,7 +23,7 @@ if __name__ == '__main__':
                   'unihouse', 'unionhouse'
                   ]
 
-        tau = [60, 50, 50, 50, 15, 25, 20, 35, 25, 25, 25, 20, 15, 25, 10, 50, 35, 50, 35]
+        tau = [60, 50, 50, 50, 15, 25, 20, 35, 25, 25, 25, 20, 4, 25, 10, 50, 35, 50, 35]
         t_linkage(tau[k], labels[k], "H")
         # endregion
     else:

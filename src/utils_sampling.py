@@ -13,12 +13,11 @@ def get_localized_prob(pts, pt, ni):
 
 
 
-def localized_sampling(src_pts, dst_pts, k, prior, ni=1 / 3):
+def localized_sampling(src_pts, dst_pts, k, ni=1 / 3):
     num_of_pts = src_pts.shape[0]
     g = np.random.Generator(np.random.PCG64())
-    prob = prior / np.sum(prior)  # normalize prior
 
-    mss0 = g.choice(num_of_pts, 1, p=prob)
+    mss0 = g.choice(num_of_pts, 1)
 
     prob_local_src = get_localized_prob(src_pts, src_pts[mss0], ni)
     prob_local_dst = get_localized_prob(dst_pts, dst_pts[mss0], ni)

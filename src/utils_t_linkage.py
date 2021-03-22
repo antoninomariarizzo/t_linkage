@@ -8,7 +8,7 @@ import random
 
 
 def show_pref_matrix(pref_m, label_k):
-    fig, ax = plt.subplots(figsize=(5, 2.5))
+    fig, ax = plt.subplots(figsize=(5, 1.5))
     matr = ax.imshow(pref_m, cmap='Blues', interpolation='nearest')
     divider = make_axes_locatable(ax)
     cax = divider.append_axes("right", size="2%", pad=0.05)

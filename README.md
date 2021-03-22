@@ -29,18 +29,7 @@
 
 
 ### Output example
-- Matches
 
-![Matches](resources/readme_imgs/1.png)
+![Matches](resources/readme_imgs/output_motion_segmentation.png)
 
-- Preference Matrix
-
-![Preference_matrix](resources/readme_imgs/2.png )
-
-- Ground truth
-
-![Ground-truth](resources/readme_imgs/3.png)
-
-- Estimation 
-
-![Estimation](resources/readme_imgs/4.png)
+![Preference_matrix](resources/readme_imgs/output_plane_segmentation.png)

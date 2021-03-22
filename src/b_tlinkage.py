@@ -44,6 +44,7 @@ def t_linkage(tau, label_k, mode):
     plotMatches(img_i, img_j, kp_src, kp_dst, good_matches)
     # endregion
 
+    # | ############################################################################################################# |
 
     # region Get preference matrix
     if mode == "FM":
@@ -67,7 +68,7 @@ def t_linkage(tau, label_k, mode):
     # region Compute Misclassification Error
     err, num_of_pts = compute_errors(clusters_mask, clusters_mask_gt)
     me = err / num_of_pts  # compute misclassification error
+    print("ME % = " + str(round(float(me), 4)))
     # endregion
 
-    print("ME % = " + str(round(float(me), 4)))
 
