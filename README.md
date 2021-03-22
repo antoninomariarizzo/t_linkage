@@ -9,7 +9,7 @@
 - opencv
 - numpy
 - scipy
-- matplotlin
+- matplotlib
 
 
 #### Instructions
